@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-m-around_small" >
+        <template if:true={disableViewSetup} >
+            <lightning-button label="view Setup" icon-name="utility:setup"></lightning-button>
+        </template>
+    </div>
+
+
+    <div class="slds-m-around_small">
+        <template if:true={disableEmailSingle}>
+            <lightning-button label="View Email Single" icon-name="utility:email"></lightning-button>
+        </template>
+    </div>
+
+    ModifyAllData : {ModifyAllData} <br/>
+    ViewAllData : {ViewAllData} 
+</template>
