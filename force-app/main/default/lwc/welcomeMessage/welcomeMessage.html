@@ -1,3 +1,7 @@
 <template>
     
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+     Hello {greeting}!
+      <lightning-input label="greet" value={greeting} onchange={handleChange}></lightning-input>
+    </lightning-card>
 </template>
