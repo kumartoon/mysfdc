@@ -1,0 +1,25 @@
+<template>
+
+    <lightning-card title="Person List" icon-name="standard:account">
+        <ul class="slds-has-dividers_around-space slds-p-around_medium">
+        <!--    <template if:true={persons} for:each={persons} for:item="person" for:index="index">
+                <li key={person.Id} class="slds-item">
+                     {person.name}
+                </li>
+             </template> -->
+
+             <template iterator:person={persons}>
+                  <li key={person.value.id} class="slds-item">
+                    <span if:true={person.first} style="color:red;">{person.value.name}</span>
+                    <span if:false={person.first} style="color:blue;">
+                        <span if:false={person.last} >{person.value.name}</span>
+
+                    </span>
+                    <span if:true={person.last} style="color:red;">{person.value.name}</span>
+                  </li>  
+             </template>
+          </ul>
+          
+    </lightning-card>
+    
+</template>

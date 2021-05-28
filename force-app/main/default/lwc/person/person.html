@@ -1,0 +1,11 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Person detail" icon-name="standard:account">
+        
+        <p class="slds-p-horizontal_small">
+            {user.fname} {user.lname} <br/>
+
+        Location:   {location}
+        </p>
+       <lightning-button slot="actions" variant="brand" label="Update Name" onclick={handleUser}></lightning-button>
+    </lightning-card>
+</template>

@@ -1,0 +1,20 @@
+<template>
+    <lightning-card  variant="Narrow"  title="IPL" icon-name="standard:account">
+        <div class="slds-m-around_small">
+            <lightning-button variant="brand" label="RCB" onclick={handleShowClick}></lightning-button>
+        &nbsp;    <lightning-button variant="brand" label="MI" onclick={handleShowClick}></lightning-button>
+        &nbsp;     <lightning-button variant="brand" label="KKR" onclick={handleShowClick}></lightning-button>
+            
+         <template if:true={cricketers} for:each={cricketers} for:item="con" for:index="index">              
+                <li key={con.Id}>
+                    {con.fname} <br/>
+                    {con.lname} <br/>
+                    {con.team} 
+                </li>        
+              </template> 
+
+            
+              
+        </div>
+    </lightning-card>
+</template>

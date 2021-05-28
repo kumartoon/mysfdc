@@ -1,0 +1,12 @@
+<template>
+<lightning-card  variant="Narrow"  title={name} icon-name="standard:account">
+   <div class="slds-m-around_small">
+       <template if:true={showDetails}>
+        {details}
+       </template>
+        
+   </div>
+   <lightning-button slot="actions" variant="brand" label={show_hide} onclick={handleClick}></lightning-button>
+</lightning-card>
+   
+</template>

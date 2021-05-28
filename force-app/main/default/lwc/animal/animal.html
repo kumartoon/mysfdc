@@ -1,0 +1,9 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Animal" icon-name="standard:account">
+        <lightning-input label="Change Age" value={newAge} onchange={changeAge}></lightning-input> <br/>
+        Animal Name: {name} <br/>
+        Age: {age} <br/>
+
+        <lightning-button slot="actions" variant="brand" label="Update Age" onclick={updateAge}></lightning-button>
+    </lightning-card>
+</template>
